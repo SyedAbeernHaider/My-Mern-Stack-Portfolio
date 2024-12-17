@@ -1,0 +1,90 @@
+/* Navbar Styles */
+nav {
+  background: rgb(15, 15, 15); /* Black background */
+  height: 80px;
+  width: 100%;
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Ensures it sticks to the top */
+  z-index: 1000; /* Keeps the navbar above other content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: rgb(136, 124, 124); /* Matches your design */
+}
+
+label.logo {
+  color: rgb(136, 124, 124);
+  font-size: 25px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  color: rgb(136, 124, 124);
+  font-size: 17px;
+  margin: 0 10px;
+  padding: 7px 13px;
+  border-radius: 3px;
+	text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+a.active,
+a:hover {
+  background: rgb(136, 124, 124) ;
+  color: white;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: rgb(136, 124, 124);
+  display: none; /* Hidden for larger screens */
+}
+
+#check {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 890px) {
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: #040404;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 14px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+}

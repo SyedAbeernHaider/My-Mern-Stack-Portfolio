@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.about {
+  margin-top: 0%;
+  min-height: 100vh; /* Use min-height instead of height */
+  width: 100%;
+  background-color: black;
+  font-weight: bolder;
+}
+
+.heading {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.heading h1 {
+  font-size: 70px;
+}
+
+.about img {
+  height: 75vh;
+  width: auto;
+  margin-top: 50px;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 5%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.about-me {
+  border-top: 1px solid rgb(136, 124, 124);
+  border-bottom: 1px solid rgb(136, 124, 124);
+  margin-top: 2%;
+}
+
+.about-me h1 {
+  text-align: center;
+}
+
+.h1 {
+  margin-left: 35px;
+  margin-top: 50px;
+  color: rgb(136, 124, 124);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.about-me p {
+  color: rgb(136, 124, 124);
+  font-size: 17px;
+  margin-left: 20px;
+}
+
+.school {
+  color: rgb(136, 124, 124);
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 60px;
+  text-decoration: none;
+}
+
+.span {
+  color: rgb(136, 124, 124);
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 0px;
+  text-decoration: none;
+}
+
+.institute {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.uni {
+  margin-left: 25%;
+}
+
+.main-content {
+  display: flex;
+}
+
+.about-me {
+  display: flex;
+}
+
+.chart {
+  display: flex;
+}
+
+@media only screen and (max-width: 1400px) {
+  .about-me img {
+    display: block;
+    margin: 50px auto 5vh;
+    border: 2px solid white;
+    border-radius: 5%;
+  }
+
+  .main-content {
+    display: block;
+  }
+
+  .about-me {
+    display: block;
+  }
+
+  .uni {
+    margin-bottom: 50px;
+  }
+  .school{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .span{
+    font-size: 12px ;
+  }
+}
+
+@media only screen and (max-width: 895px) {
+  .heading h1 {
+    font-size: 60px;
+  }
+  .about img {
+    height: 60vh;
+    width: 350px;
+  }
+
+  .school {
+    margin-left: 20px;
+    display: block;
+  }
+  .about-me p {
+    font-size: 13px;
+    margin-left: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 683px) {
+  .chart {
+    display: block;
+  }
+
+  .uni .school {
+    text-align: left;
+  }
+
+  .uni {
+    margin-left: 0;
+  }
+
+  .about img {
+    height: 55vh;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 467px) {
+  .about img {
+    height: 40vh;
+    width: auto;
+  }
+
+  .h1 {
+    font-size: 25px;
+  }
+  .about-me p {
+    color: rgb(136, 124, 124);
+    font-size: 10px;
+    margin-left: 20px;
+  }
+}

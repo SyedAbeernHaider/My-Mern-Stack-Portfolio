@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: rgb(136, 124, 124);
+}
+
+/* Main Container */
+.project1 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.project1 h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: rgb(136, 124, 124);
+}
+
+/* Project Description Section */
+.project-description {
+  max-width: 800px;
+  width: 100%;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-description h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: rgb(136, 124, 124);
+}
+
+.project-description p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+/* GitHub Link */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgb(136, 124, 124);
+  background-color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.github-link:hover {
+  background-color: #555;
+  color: rgb(200, 200, 200);
+}
+
+/* GitHub Logo */
+.github-logo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(136, 124, 124);
+  -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/25/25231.png') no-repeat center;
+  mask: url('https://cdn-icons-png.flaticon.com/512/25/25231.png') no-repeat center;
+  mask-size: contain;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.github-link:hover .github-logo {
+  background-color: rgb(200, 200, 200);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project1 h1 {
+    font-size: 50px;
+  }
+
+  .project-description h2 {
+    font-size: 24px;
+  }
+
+  .project-description p {
+    font-size: 16px;
+  }
+
+  .github-link {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project1 h1 {
+    font-size: 36px;
+  }
+
+  .project-description h2 {
+    font-size: 20px;
+  }
+
+  .project-description p {
+    font-size: 14px;
+  }
+}
+

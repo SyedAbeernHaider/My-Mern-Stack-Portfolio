@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: rgb(136, 124, 124);
+}
+
+.project {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+.project h1 {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 40px;
+  color: rgb(136, 124, 124);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  color: rgb(136, 124, 124);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 0; /* Default margin */
+}
+
+.project-card:nth-child(n + 4) {
+  margin-top: 40px; /* Add top margin for 4th, 5th, and 6th cards */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Larger shadow on hover */
+}
+
+.project-image {
+  height: 200px;
+  background-color: #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.project-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-details-button {
+  background-color: transparent;
+  border: 1px solid rgb(136, 124, 124);
+  border-radius: 5px;
+  color: rgb(136, 124, 124);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.view-details-button:hover {
+  background-color: rgb(136, 124, 124);
+  color: black;  /* Text color will be black on hover */
+  border: 1px solid rgb(136, 124, 124);  /* Border stays same as background */
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row for medium screens */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* 1 card per row for small screens */
+  }
+  .project-card {
+    margin-top: 20px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 542px) {
+  .project h1 {
+    font-size: 35px;
+  }
+
+  .project-card {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .project-card h2 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+
+  .view-details-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
