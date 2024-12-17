@@ -59,7 +59,7 @@ const Home = () => {
         <div className="btn-div d-flex" data-aos="fade-up" data-aos-delay="600">
           {/* Download CV Button */}
           <a
-            href="./../../../public/cv.pdf" // Path to your CV file in 'public' folder
+            href="./../../../cv.pdf" // Path to your CV file in 'public' folder
             download="cv.pdf" // File name when downloaded
           >
             <button>Download CV</button>

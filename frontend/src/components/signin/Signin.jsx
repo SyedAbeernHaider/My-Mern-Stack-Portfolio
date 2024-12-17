@@ -20,7 +20,7 @@ const Signin = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${window.location.origin}/user/signin`, Inputs);
+      const response = await axios.post(`$http://localhost:1500/user/signin`, Inputs);
 
       // Check if the response includes the user ID
       if (response.data._id) {
