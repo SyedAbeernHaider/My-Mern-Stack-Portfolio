@@ -4,7 +4,6 @@ import image from "./my1f-removebg-preview-modified.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typed from "typed.js";
-import resume from "../../../public/mycv.pdf"
 
 const Home = () => {
   const typingRef = useRef(null);
@@ -47,21 +46,21 @@ const Home = () => {
           Full Stack/ MERN Stack Web Developer
         </h2>
         <p data-aos="fade-up" data-aos-delay="400">
-          I am a passionate fresh MERN stack web developer with a solid command
-          of HTML, CSS, JavaScript, and advanced frameworks and libraries such
-          as React, Node.js, Express.js, Redux Toolkit, and MongoDB for backend
-          development. My goal is to leverage my skills to build scalable,
-          user-friendly web applications while continuously learning and
-          improving. I'm eager to work with a dynamic team where I can
-          contribute effectively, collaborate, and expand my knowledge and
-          experience in the field of web development. Let's create innovative
-          solutions together!
+          I am a passionate fresh MERN stack web developer with a solid
+          command of HTML, CSS, JavaScript, and advanced frameworks and
+          libraries such as React, Node.js, Express.js, Redux Toolkit, and
+          MongoDB for backend development. My goal is to leverage my skills
+          to build scalable, user-friendly web applications while
+          continuously learning and improving. I'm eager to work with a
+          dynamic team where I can contribute effectively, collaborate, and
+          expand my knowledge and experience in the field of web development.
+          Let's create innovative solutions together!
         </p>
         <div className="btn-div d-flex" data-aos="fade-up" data-aos-delay="600">
           {/* Download CV Button */}
-
-          <button><a href={resume} download={resume}></a></button>
-
+          <a href="/mycv.pdf" download>
+            <button>Download CV</button>
+          </a>
           <button>Hire Me</button>
         </div>
       </div>
@@ -70,5 +69,4 @@ const Home = () => {
 };
 
 export default Home;
-
 
