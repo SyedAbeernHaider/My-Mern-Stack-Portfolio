@@ -2,7 +2,7 @@ const { mongoose } = require("mongoose")
 
 const conn = async (req, res) => {
   try {
-    await mongoose.connect("mongodb+srv://haiderabeer794:axbrCHr3FNmu9rdZ@portfoliocluster.fcuh8.mongodb.net/?retryWrites=true&w=majority&appName=PortfolioCluster").then(() => {
+    await mongoose.connect(process.env.MONGO_URL).then(() => {
       console.log("MongoDB is connected !!")
     })
   } catch (error) {
