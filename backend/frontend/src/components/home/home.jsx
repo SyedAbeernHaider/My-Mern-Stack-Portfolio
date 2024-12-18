@@ -58,10 +58,7 @@ const Home = () => {
         </p>
         <div className="btn-div d-flex" data-aos="fade-up" data-aos-delay="600">
           {/* Download CV Button */}
-          <a
-            href="./../../../cv.pdf" // Path to your CV file in 'public' folder
-            download="cv.pdf" // File name when downloaded
-          >
+          <a href="/mycv.pdf" download="mycv.pdf">
             <button>Download CV</button>
           </a>
           <button>Hire Me</button>
@@ -72,5 +69,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
