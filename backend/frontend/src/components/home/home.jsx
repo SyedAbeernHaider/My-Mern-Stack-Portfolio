@@ -4,6 +4,7 @@ import image from "./my1f-removebg-preview-modified.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typed from "typed.js";
+import resume from "../../../public/mycv.pdf"
 
 const Home = () => {
   const typingRef = useRef(null);
@@ -58,12 +59,9 @@ const Home = () => {
         </p>
         <div className="btn-div d-flex" data-aos="fade-up" data-aos-delay="600">
           {/* Download CV Button */}
-          <a
-            href="/mycv.pdf" // Path to your CV file in 'public' folder
-            download="mycv.pdf" // File name when downloaded
-          >
-            <button>Download CV</button>
-          </a>
+
+          <button><a href={resume} download={resume}></a></button>
+
           <button>Hire Me</button>
         </div>
       </div>
