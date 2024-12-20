@@ -1,23 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "backend/app.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "frontend/build/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/mycv.pdf",
-      "dest": "/frontend/build/mycv.pdf"
-    },
-    {
-      "src": "(.*)",
-      "dest": "backend/app.js"
-    }
-  ]
+ "rewrites" : [
+   {"source": "/(.*)" , "destination": "/"}
+ ]
 }
