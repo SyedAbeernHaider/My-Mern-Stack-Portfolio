@@ -57,11 +57,9 @@ const Home = () => {
           Let's create innovative solutions together!
         </p>
         <div className="btn-div d-flex" data-aos="fade-up" data-aos-delay="600">
-          {/* Download CV Button */}
-          <a href="/mycv.pdf" download>
-            <button>Download CV</button>
-          </a>
-          <button>Hire Me</button>
+          <button>
+            <a href="/Syed Abeer Bin HAider (1).pdf" download="Syed Abeer Bin HAider (1).pdf">Download CV</a> {/* Corrected link */}
+          </button>
         </div>
       </div>
     </div>
